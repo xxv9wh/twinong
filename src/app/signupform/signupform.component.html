@@ -1,0 +1,37 @@
+<form name="subscription">
+  <div class="row">
+    <div class="col-12 col-md-6 py-2 mx-auto">
+      <div class="form-group">
+        <label class="fw-medium font-16" for="email">Email address</label>
+        <input class="form-control" name="email" placeholder="Your email" type="email">
+      </div>
+    </div>
+  </div>
+  <div class="row choosePlan">
+    <div class="col-12 col-md-6 py-4 mx-auto">
+      <span class="fw-600 font-20">Choose the price</span>
+      <div class="row justify-content-center py-2">
+        <div  *ngFor="let plan of plans">
+          <div class="col">
+            <label class="custom-control custom-radio plan-option rounded py-3 px-4">
+              <input class="custom-control-input" name="plan" id="radio-0" value="0" type="radio">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">
+                <div class="d-block fw-600">
+                  <sup class="plan-price-currency">€</sup>
+                  <span class="plan-price font-24">{{ plan.price }}</span>
+                </div>
+                {{ plan.name }}
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-12 col-md-6 py-2 mx-auto">
+      <input class="btn btn-primary btn-wide" value="Send" type="submit">
+    </div>
+  </div>
+</form>

@@ -1,0 +1,225 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url(https://fonts.googleapis.com/css?family=Barlow:400,500,600);
+
+/**
+  base overrides
+**/
+
+body {
+  font-family: 'Barlow', sans-serif !important;
+  color: #212121;
+  font-weight: 400
+}
+
+#action {
+  background: #FAFAFA
+}
+
+#footer {
+  background: #EEEEEE
+}
+
+.option {
+  background: #F2F2F2
+}
+
+.btn-primary {
+  background: #4527A0;
+  border: 0
+}
+
+.btn-primary:hover {
+  background: #6b49d3;
+  border: 0
+}
+
+.navbar-horizontal {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar-yellow {
+  background: #FFB300
+}
+
+.nav-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+
+.nav-item a:link,
+.nav-item a:visited,
+.nav-item a:active {
+  color: #000;
+  transition: all .2s ease-in-out;
+}
+
+.nav-item a:hover {
+  color: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.fw-500 {
+  font-weight: 500
+}
+
+.fw-600 {
+  font-weight: 600
+}
+
+.font-12 {
+  font-size: 0.8333rem
+}
+
+.font-16 {
+  font-size: 1rem
+}
+
+.font-20 {
+  font-size: 1.25rem
+}
+
+.font-24 {
+  font-size: 1.5rem
+}
+
+.font-45 {
+  font-size: 2.813
+}
+
+.font-75 {
+  font-size: 4rem
+}
+
+.btn-bordered {
+  border: 1px solid #fff;
+}
+
+/**
+  override bootstrap forms
+**/
+.form-control {
+  border: 2px solid #B0BEC5;
+  border-radius: 0;
+  padding: 20px
+}
+
+::-webkit-input-placeholder,
+::-ms-input-placeholder,
+:-ms-input-placeholder,
+::-webkit-input-placeholder {
+    color: #808E95;
+}
+
+::-webkit-input-placeholder,
+::-ms-input-placeholder,
+:-ms-input-placeholder,
+::placeholder {
+    color: #808E95;
+}
+:-moz-placeholder,
+::-moz-placeholder {
+   color: #808E95;
+   opacity:  1;
+}
+
+/**
+  responsive
+**/
+
+@media (max-width: 576px) {
+
+  .font-75 {
+    font-size: 2rem
+  }
+
+  .nav-item {
+    margin: 0 0.6rem;
+    padding: 0;
+  }
+
+  .container {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar-toggleable {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .navbar-toggleable .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .navbar-toggleable>.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    /* align-items: center; */
+    width: 100%;
+  }
+}
+
+
+/**
+  plans
+**/
+
+.plan-option[_ngcontent-c1] {
+  background: #F2F2F2;
+}
+
+.plan-selected[_ngcontent-c1] {
+  background: #F4511E;
+  color: #fff
+}
+
+.custom-control-indicator[_ngcontent-c1] {
+  margin: 5px;
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+.custom-radio[_ngcontent-c1]   .custom-control-indicator[_ngcontent-c1] {
+  background: #fff
+}
+
+.custom-control-input[_ngcontent-c1]:checked    ~ .custom-control-indicator[_ngcontent-c1] {
+  background: #1A237E
+}
+
+.btn-wide[_ngcontent-c1] {
+  padding: 1rem 4.6rem;
+}

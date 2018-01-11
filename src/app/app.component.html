@@ -1,0 +1,49 @@
+<main>
+  <header id="header">
+    <nav class="navbar navbar-toggleable navbar-yellow py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="img-fluid" src="{{ logo }}" alt="app">
+        </a>
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item btn-bordered rounded hidden-sm-down">
+            <a class="nav-link" href="#">Upload</a>
+          </li>
+          <li class="nav-item hidden-md-up">
+            <a class="nav-link" href="#"><img src="/assets/img/btn-upload.png"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container-fluid" id="hero">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img alt="" class="img-fluid d-block mx-auto" src="{{ imageHero }}">
+        </div>
+        <div class="col-12 col-md-6 align-self-center text-center">
+          <h1 class="font-75 pt-2 pt-sm-0">Share as you go</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid py-5" id="action">
+    <div class="container my-0 my-md-5">
+      <app-signupform></app-signupform>
+    </div>
+  </section>
+  <section class="container-fluid" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center py-4">
+          <span class="font-12">Wolfpack</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
